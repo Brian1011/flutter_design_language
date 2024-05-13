@@ -1,3 +1,4 @@
+import 'package:design_language/core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
 import 'colors.dart';
@@ -42,12 +43,12 @@ final ThemeData lightTheme = ThemeData(
     actionsIconTheme: IconThemeData(color: Colors.white),
   ),
   textTheme: const TextTheme(
-    displayLarge: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
-    displayMedium: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
-    displaySmall: TextStyle(fontSize: 14.0),
-    bodyLarge: TextStyle(fontSize: 18.0),
-    bodyMedium: TextStyle(fontSize: 14.0),
-    bodySmall: TextStyle(fontSize: 12.0),
+    displayLarge: displayLargeTextStyle,
+    displayMedium: displayMediumTextStyle,
+    displaySmall: displaySmallTextStyle,
+    bodyLarge: bodyLargeTextStyle,
+    bodyMedium: bodyMediumTextStyle,
+    bodySmall: bodySmallTextStyle,
   ).apply(
     bodyColor: const Color(0xff1c1c14),
     displayColor: const Color(0xff1c1c14),
