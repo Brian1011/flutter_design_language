@@ -48,6 +48,12 @@ Any extra widget that is used in the project will be defined in the `core/widget
 The spacing of the project will be consistent across all elements of the project.
 All spacing widgets will be defined in the `spacing.dart` file.
 
-## Conclusion
+# Usage
+Checkout `core/widgets` for an example of how to use the design language.
+It contains examples of how to use the design language for buttons, text fields, and spacing.
+
+# Conclusion
 This is a sample design language for a project. The design language can be customized to fit the needs of the project.
 The aim is to allow for a consistent design across the project and to reduce the amount of time spent on design decisions.
+
+
