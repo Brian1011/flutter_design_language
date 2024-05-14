@@ -1,4 +1,7 @@
 # Design Language
+## Screenshots
+![Screenshot 1](https://github.com/Brian1011/flutter_design_language/blob/main/assets/img.png)
+
 ## Purpose
 The purpose of this repository is to create a consistent design language for the project. 
 This will help to ensure that the project is cohesive and that all elements of the project are consistent with each other. 
