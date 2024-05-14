@@ -39,7 +39,7 @@ final ThemeData lightTheme = ThemeData(
   ),
   appBarTheme: const AppBarTheme(
     backgroundColor: primaryColor,
-    //foregroundColor: Colors.white,
+    foregroundColor: Colors.white,
     actionsIconTheme: IconThemeData(color: Colors.white),
   ),
   textTheme: const TextTheme(
@@ -60,8 +60,9 @@ final ThemeData lightTheme = ThemeData(
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
+      minimumSize: MaterialStateProperty.all(const Size(double.infinity, 48.0)),
       backgroundColor: MaterialStateProperty.all(primaryColor),
-      // foregroundColor: MaterialStateProperty.all(Colors.white),
+      foregroundColor: MaterialStateProperty.all(Colors.white),
     ),
   ),
   outlinedButtonTheme: OutlinedButtonThemeData(

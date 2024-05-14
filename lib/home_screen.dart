@@ -13,50 +13,56 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Home Screen',
-            style: Theme.of(context).textTheme.headlineSmall),
-      ),
-      body: Center(
-        child: ListView(
-          children: [
-            Text(
-              'Headline Large',
-              style: Theme.of(context).textTheme.headlineLarge,
-            ),
-            verticalSpaceTiny,
-            Text(
-              'Headline Medium',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-            verticalSpaceTiny,
-            Text(
-              'Headline Small',
-              style: Theme.of(context).textTheme.headlineSmall,
-            ),
-            verticalSpaceTiny,
-            const Divider(),
-            verticalSpaceMedium,
-            Text(
-              'Body Large',
-              style: Theme.of(context).textTheme.bodyLarge,
-            ),
-            verticalSpaceTiny,
-            Text(
-              'Body Medium',
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-            verticalSpaceTiny,
-            Text(
-              'Body Small',
-              style: Theme.of(context).textTheme.bodySmall,
-            ),
-            const Divider(),
-            verticalSpaceMedium,
-          ],
+        appBar: AppBar(
+          title: const Text('Home Screen'),
         ),
-      ),
-    );
+        body: Container(
+          padding: const EdgeInsets.all(16),
+          child: Center(
+            child: ListView(
+              children: [
+                Text(
+                  'Headline Large',
+                  style: Theme.of(context).textTheme.headlineLarge,
+                ),
+                verticalSpaceTiny,
+                Text(
+                  'Headline Medium',
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+                verticalSpaceTiny,
+                Text(
+                  'Headline Small',
+                  style: Theme.of(context).textTheme.headlineSmall,
+                ),
+                verticalSpaceTiny,
+                const Divider(),
+                verticalSpaceMedium,
+                Text(
+                  'Body Large',
+                  style: Theme.of(context).textTheme.bodyLarge,
+                ),
+                verticalSpaceTiny,
+                Text(
+                  'Body Medium',
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
+                verticalSpaceTiny,
+                Text(
+                  'Body Small',
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+                const Divider(),
+                verticalSpaceMedium,
+                const FormWidget(),
+              ],
+            ),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: const Icon(Icons.add),
+        ));
   }
 }
 
